@@ -57,6 +57,7 @@ axes[1, 1].set_title('Churn Distribution by Gender')
 plt.tight_layout(rect=[0, 0.03, 1, 0.95])
 plt.show()
 ```
+![Churn Analysis](bank_churn_visualizations.png)
 
 ### Feature Correlation Heatmap
 A correlation heatmap helps us understand the relationships between the numerical features. This is useful for identifying potential multicollinearity.
@@ -75,6 +76,7 @@ sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm', fmt='.2f')
 plt.title('Correlation Heatmap of Bank Churn Features')
 plt.show()
 ```
+![Correlation Heatmap](bank_churn_correlation_heatmap.png)
 
 ## 3. Modeling with Logistic Regression
 We use `Logistic Regression` for our binary classification task. The data is split into training and testing sets, and the features are scaled using `StandardScaler` for better model performance.
